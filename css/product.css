@@ -2,23 +2,6 @@ header {
     padding-bottom: 100px;
 }
 
-.catalog__title {
-    padding-bottom: 25px;
-    font-size: 35px;
-}
-
-select {
-    width: 300px;
-    height: 40px;
-    padding: 10px;
-    background-color: #EAE5D7;
-    outline: none;
-}
-
-select[name='executor'] {
-    margin-left: 5%;
-}
-
 .card {
     display: flex;
     justify-content: space-between;
@@ -88,6 +71,84 @@ select[name='executor'] {
     top: 192px;
 }
 
+.product {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.276);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.product__img {
+    width: 100%;
+}
+
+
+.product__icon {
+    width: 25px;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 550px;
+}
+
+
+.product__image {
+    flex-basis: calc(100% - 550px - 90px);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 15px
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.product__price {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.product__treklist p {
+    margin-top: 5px;
+}
+
+.product__btn {
+    padding: 10px 100px 10px 100px;
+    border: none;
+    background-color: black;
+    color: #EAE5D7;
+}
+
+.product__icon {
+    cursor: pointer;
+}
+
+.product__fav {
+    margin-left: 35px;
+}
+
+.product__icons_btn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
 @media(max-width:1160px) {
     .card__text {
         flex-basis: 150px;
@@ -99,6 +160,24 @@ select[name='executor'] {
 }
 
 @media(max-width:1100px) {
+
+    .product__image {
+        flex-basis: calc(100% - 300px - 70px);
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .product__btn {
+        padding: 10px 70px 10px 70px;
+    }
+
     .card__cover {
         height: 280px;
     }
@@ -123,9 +202,33 @@ select[name='executor'] {
         font-size: 17px;
         margin-bottom: 15px;
     }
+
 }
 
 @media(max-width:850px) {
+
+    .product__info {
+        flex-basis: 320px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-top: 10px
+    }
+
+    h4 {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+
+    .product__icon {
+        width: 20px;
+    }
+
     .card__cover {
         height: 210px;
     }
@@ -161,6 +264,14 @@ select[name='executor'] {
 }
 
 @media(max-width:725px) {
+    .product__image {
+        flex-basis: calc(100% - 275px - 30px);
+    }
+
+    .product__icon {
+        width: 18px;
+    }
+
     .card__cover {
         height: 185px;
     }
@@ -193,38 +304,15 @@ select[name='executor'] {
     .card__icons {
         flex-basis: calc(100% - 80px - 5px);
     }
-
-    select {
-        width: 250px;
-        height: 30px;
-        padding: 3px;
-    }
-
-    .catalog__title {
-        font-size: 30px;
-    }
-
-    select[name='executor'] {
-        margin-left: 2%;
-    }
 }
 
 @media(max-width:585px) {
-
-    .catalog__title {
-        text-align: center;
-    }
-
-    .catalog__select {
-        display: flex;
+    .product {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
-    select[name='executor'] {
-        margin-left: 0%;
-        margin-top: 10px;
+    .product__icon {
+        width: 20px;
     }
 
     .card {
@@ -282,16 +370,16 @@ select[name='executor'] {
     .card__icons {
         flex-basis: calc(100% - 150px - 5px);
     }
-
 }
 
 @media(max-width:350px) {
+    .product__icons_btn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .card__icons {
         top: 168px;
         left: 30px;
-    }
-
-    select{
-        width: 80%;
     }
 }

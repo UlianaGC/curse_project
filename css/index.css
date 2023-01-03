@@ -292,9 +292,7 @@ input[name='r'] {
 
     .new__image,
     .popular__image {
-
         flex-basis: calc(100% - 300px - 70px);
-
     }
 
     .main__image {
