@@ -23,7 +23,7 @@ header {
 }
 
 .registration__text,
-.registration__password {
+.registration__type_password {
     height: 35px;
     width: 100%;
     outline: none;
@@ -33,7 +33,7 @@ header {
 }
 
 .registration__text::placeholder,
-.registration__password::placeholder {
+.registration__type_password::placeholder {
     color: black;
 }
 
@@ -79,17 +79,23 @@ input[type='checkbox']:checked + label::before{
     background-size: 100%;
 }
 
-.registration__password{
-    background: url(/img/passw1.png) no-repeat;
-    background-size: 20px;
-    background-position: 250px;
-}
-
 .registration__btn{
     height: 35px;
     width: 100%;
     background-color: black;
     color: #EAE5D7;
+}
+
+.registration__type_password {
+    position: relative;
+}
+
+.registration__img_password {
+    width: 20px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 7.5px;
+    cursor: pointer;
 }
 
 @media(max-width:725px) {
@@ -115,12 +121,12 @@ input[type='checkbox']:checked + label::before{
     }
 
     .registration__text,
-    .registration__password,
+    .registration__type_password,
     .registration__btn {
         height: 25px;
     }
 
-    .registration__password {
+    .registration__type_password {
         background-size: 14px;
         background-position: 175px;
     }
@@ -132,6 +138,12 @@ input[type='checkbox']:checked + label::before{
     label::before{
         width: 60px;
         height: 22px;
+    }
+
+    .registration__img_password {
+        width: 17px;
+        margin-left: -35px;
+        margin-top: 5px;
     }
 
 }
