@@ -2,75 +2,6 @@ header {
     padding-bottom: 100px;
 }
 
-.card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 30px 0px 30px 0px;
-}
-
-.card__item {
-    flex-basis: 30%;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.card__item__right {
-    padding: 0px;
-}
-
-.card__cover {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 340px;
-    border-radius: 5px;
-}
-
-.card__img {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
-.card__text {
-    display: flex;
-}
-
-.card__icon {
-    width: 25px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.card__title {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 18px;
-    margin-top: 45px;
-}
-
-.card__executor,
-.card__genre,
-.card__price {
-    font-size: 20px;
-    margin-bottom: 18px;
-}
-
-.card__span {
-    font-weight: 700;
-}
-
-.card__icons {
-    left: 7px;
-    position: relative;
-    top: 192px;
-}
-
 .product {
     display: flex;
     justify-content: space-between;
@@ -83,7 +14,6 @@ header {
     width: 100%;
 }
 
-
 .product__icon {
     width: 25px;
 }
@@ -93,7 +23,6 @@ header {
     flex-direction: column;
     flex-basis: 550px;
 }
-
 
 .product__image {
     flex-basis: calc(100% - 550px - 90px);
@@ -149,18 +78,7 @@ span {
     gap: 40px;
 }
 
-@media(max-width:1160px) {
-    .card__text {
-        flex-basis: 150px;
-    }
-
-    .card__icons {
-        flex-basis: calc(100% - 150px - 5px);
-    }
-}
-
 @media(max-width:1100px) {
-
     .product__image {
         flex-basis: calc(100% - 300px - 70px);
         margin-right: 20px;
@@ -177,36 +95,9 @@ span {
     .product__btn {
         padding: 10px 70px 10px 70px;
     }
-
-    .card__cover {
-        height: 280px;
-    }
-
-    .card__icons {
-        top: 185px;
-    }
-
-    .card__icon {
-        width: 20px;
-    }
-
-    .card__title {
-        font-size: 20px;
-        margin-bottom: 15px;
-        margin-top: 40px;
-    }
-
-    .card__executor,
-    .card__genre,
-    .card__price {
-        font-size: 17px;
-        margin-bottom: 15px;
-    }
-
 }
 
 @media(max-width:850px) {
-
     .product__info {
         flex-basis: 320px;
     }
@@ -228,39 +119,6 @@ span {
     .product__icon {
         width: 20px;
     }
-
-    .card__cover {
-        height: 210px;
-    }
-
-    .card__icons {
-        top: 150px;
-    }
-
-    .card__icon {
-        width: 16px;
-    }
-
-    .card__title {
-        font-size: 17px;
-        margin-bottom: 12px;
-        margin-top: 30px;
-    }
-
-    .card__executor,
-    .card__genre,
-    .card__price {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-
-    .card__text {
-        flex-basis: 100px;
-    }
-
-    .card__icons {
-        flex-basis: calc(100% - 100px - 5px);
-    }
 }
 
 @media(max-width:725px) {
@@ -270,39 +128,6 @@ span {
 
     .product__icon {
         width: 18px;
-    }
-
-    .card__cover {
-        height: 185px;
-    }
-
-    .card__icons {
-        top: 160px;
-    }
-
-    .card__icon {
-        width: 15px;
-    }
-
-    .card__title {
-        font-size: 15px;
-        margin-bottom: 12px;
-        margin-top: 30px;
-    }
-
-    .card__executor,
-    .card__genre,
-    .card__price {
-        font-size: 12px;
-        margin-bottom: 12px;
-    }
-
-    .card__text {
-        flex-basis: 80px;
-    }
-
-    .card__icons {
-        flex-basis: calc(100% - 80px - 5px);
     }
 }
 
@@ -315,60 +140,8 @@ span {
         width: 20px;
     }
 
-    .card {
-        max-width: 275px;
-        margin: 30px auto 10px;
-        flex-direction: column;
-
-        padding: 30px 0px 0px 0px;
-    }
-
-    .card__item {
-        padding-bottom: 30px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.258);
-    }
-
-    .card__cover {
-        height: 235px;
-    }
-
-    .card__img {
-        height: 250px;
-    }
-
-    .card__item__right {
-        border: none;
-    }
-
-    .card__icons {
-        top: 150px;
-        left: 10px;
-    }
-
-    .card__icon {
-        width: 20px;
-    }
-
-    .card__title {
-        font-size: 20px;
-        margin-bottom: 12px;
-        margin-top: 30px;
-    }
-
-    .card__executor,
-    .card__genre,
-    .card__price {
-        font-size: 15px;
-        margin-bottom: 12px;
-    }
-
-    .card__text {
-        flex-basis: 150px;
-    }
-
-    .card__icons {
-        flex-basis: calc(100% - 150px - 5px);
+    .vinyl_executor{
+        text-align: center;
     }
 }
 
@@ -376,10 +149,5 @@ span {
     .product__icons_btn {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .card__icons {
-        top: 168px;
-        left: 30px;
     }
 }
