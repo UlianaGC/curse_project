@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/css/style_card.css">
     <link rel="stylesheet" href="/css/index.css">
     <script defer src="/js/hr_card.js"></script>
+    <script defer src="/js/index_slider.js"></script>
     <title>Document</title>
-
 </head>
 
 <body>
@@ -197,39 +197,34 @@
             </div>
         </div>
     </div>
-
-    <div class="slid">
-        <div class="conteiner slid_cont">
-            <h4 class="slid__title">Отзывы наших покупателей</h4>
-            <div class="slider middle">
-                <div class="slides">
-                    <input type="radio" name="r" id="r1" checked>
-                    <input type="radio" name="r" id="r2">
-                    <input type="radio" name="r" id="r3">
-                    <div class="slide s1">
-                        <p class="slide__p">Пришла пластинка, которую так долго искал. Очень даволен. Звучание на высшем
-                            уровне,
-                            буду заказывать еще. <br>- Виктор</p>
-                    </div>
-                    <div class="slide">
-                        <p class="slide__p">Слушаю винил очень давно. Но о данном сайте узнала недавно от коллег. Решила
-                            заказать
-                            товар и осталась в приятном удивлении. Пластинка в хорошем состояние, а звук просто
-                            прелесть<br>- Виктория</p>
-                    </div>
-                    <div class="slide">
-                        <p class="slide__p">Рад что нашел данную платформу, буду советовать таким же любителям музыки
-                            как и я. И
-                            сам обязательно закажу что-нибудь еще раз!<br>- Алексей</p>
-                    </div>
-                </div>
-
-                <div class="navigation">
-                    <label for="r1" class="bar"></label>
-                    <label for="r2" class="bar"></label>
-                    <label for="r3" class="bar"></label>
+    <div class="block">
+        <div class="slider">
+            <div class="slider__div">
+                <div class="slider__p">
+                    <p>Пришла пластинка, которую так долго искал. Очень даволен. Звучание на высшем уровне, буду
+                        заказывать еще.</p>
+                    <p>- Виталий</p>
                 </div>
             </div>
+
+            <div class="slider__div">
+                <div class="slider__p">
+                    <p>Заказываю не в первый раз и всегда приходят хорошие пластинки. Плотно запакованы, а звук просто
+                        отличный</p>
+                    <p>- Михаил</p>
+                </div>
+            </div>
+
+            <div class="slider__div">
+                <div class="slider__p">
+                    <p>Услышала об этом сайте от коллег, решила заказать и не прогодала, нашла любимый альбом и очень
+                        рада!</p>
+                    <p>- Ирина</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="minusSlide()">❮</a>
+            <a class="next" onclick="plusSlide()">❯</a>
         </div>
     </div>
     <section class="section__footer">
