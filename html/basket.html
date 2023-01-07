@@ -148,6 +148,48 @@
             </div>
         </footer>
     </section>
+
+    <div class="modal-window-address">
+        <div class="modal">
+            <p class="modal__close">x</p>
+            <h1 class="modal__title">Адрес</h1>
+            <div class="contact">
+                <h2>Контактная информация</h2>
+                <input class="contact__fio" type="text" placeholder="ФИО" required>
+                <input class="contact__phone" type="text" placeholder="номер телефона" required>
+            </div>
+            <div class="address">
+                <h2>Пункт получения</h2>
+                <select name="country" id="country">
+                    <option disabled selected value>страна</option>
+                </select>
+                <div class="address__div">
+                    <select name="area" id="area">
+                        <option disabled selected value>область</option>
+                    </select>
+                    <select name="city" id="city">
+                        <option disabled selected value>город</option>
+                    </select>
+                    <input class="addres__house" type="text" placeholder="ул и дом" required>
+                    <input class="address__flat" type="text" placeholder="кв" required>
+                    <input class="address__index" type="text" placeholder="индекс" required>
+                </div>
+            </div>
+            <button class="modal__btn modal__btn_black">Подтвердить</button>
+            <button class="modal__btn">Отмена</button>
+        </div>
+    </div>
+
+    <div class="modal-window-delete">
+        <div class="modal_delete">
+            <p class="modal__close modal__close_delete">x</p>
+            <h3>Вы точно хотите удалить товар из корзины?</h3>
+            <div class="modal__btns_delete">
+                <button class="delete_btn ">Да</button>
+                <button class="delete_btn delete_btn_black">Нет</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
