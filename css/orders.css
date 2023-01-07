@@ -64,6 +64,41 @@ h3 {
     gap: 20px;
 }
 
+.order__trek_font, .order__trek_back{
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #EAE5D7;
+    border: 1px solid black;
+    backface-visibility: hidden;
+}
+
+.order__trek_font{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.order__trek_back{
+    margin-top: -38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.order__copy{
+    width:15px;
+    cursor: pointer;
+}
+
+.order__trek:hover>.order__trek_font{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.order__trek:hover>.order__trek_back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
 .order__btn {
     padding: 10px 90px 10px 90px;
     background-color: #EAE5D7;
@@ -96,6 +131,7 @@ h3 {
 
     .order__btn {
         padding: 10px 70px 10px 70px;
+        width: 100%;
     }
 }
 
@@ -150,5 +186,9 @@ h3 {
     .order__name,
     .order__price_span {
         font-size: 17px;
+    }
+
+    .order__trek{
+        width: 225px;
     }
 }
