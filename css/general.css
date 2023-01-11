@@ -227,6 +227,10 @@ hr {
         max-width: 400px;
     }
 
+    header{
+        position: relative;
+    }
+
     .header__logo,
     .footer__logo {
         width: 50px;
@@ -238,13 +242,30 @@ hr {
         font-size: 8px;
     }
 
+    .header__nav, .header__list3{
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .header__nav {
-        display: none;
+        position: absolute;
+        top: -150px;
+        right: 10px;
+        text-align: right;
+        padding: 10px;
+        background-color: #EAE5D7;
+        border: 1px solid black;
+        transition: transform .6s;
+    }
+
+    .header__open_burger{
+        transform: translateY(200%);
     }
 
     .burger {
         width: 12px;
         display: block;
+        cursor: pointer;
     }
 
     .footer__copy {
