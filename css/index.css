@@ -56,10 +56,6 @@ section {
     margin-top: 0px;
 }
 
-.header__main {
-    border-bottom: 1px solid black;
-}
-
 .new,
 .popular {
     display: flex;
